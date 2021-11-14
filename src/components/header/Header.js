@@ -14,8 +14,6 @@ function Header(){
     fontWeight: 600
   };
 
-  console.log(theme);
- 
   return(
     <header className="header">
       <div className="header__container">

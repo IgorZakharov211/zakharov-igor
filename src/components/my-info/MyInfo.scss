@@ -1,0 +1,75 @@
+@import '../../utils/variables.scss';
+
+.my-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: $mainFont;
+  color: $fontColor;
+
+  &_dark{
+    color: $dFontColor;
+  }
+
+  &__hi-container{
+    align-self: center;
+  }
+
+  &__hi{
+    margin: 0 0 60px 0;
+    padding: 22px 60px 22px 60px;
+    background-color: $primaryLightColor;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+
+    &_dark{
+      background-color: $dPrimaryLightColor;
+    }
+  }
+
+  &__user{
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: max-content min-content;
+  }
+
+  &__name{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0 0 8px 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  &__subtitle{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 352px;
+    margin: 0 60px 0 0; 
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  &__avatar{
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 90px;
+    border: 2px solid $primaryLightColor;
+
+    &_dark{
+      border: 2px solid $dPrimaryLightColor;
+    }
+  }
+}
