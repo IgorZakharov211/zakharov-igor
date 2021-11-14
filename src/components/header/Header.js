@@ -3,7 +3,8 @@ import { useContext } from 'react';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
 import Logo from '../logo/Logo';
-import Dark from '../../images/icons/dark.png';
+import DarkIcon from '../../images/icons/dark.png';
+import LightIcon from '../../images/icons/light.png';
 import { ThemeContext } from '../../themeContext';
 
 function Header(){
@@ -12,6 +13,8 @@ function Header(){
   let activeStyle = {
     fontWeight: 600
   };
+
+  console.log(theme);
  
   return(
     <header className="header">
@@ -32,8 +35,8 @@ function Header(){
             </ul>
           </nav>
         </div>
-        <button className="header__theme-button" onClick={toggleTheme}>
-          <img className="header__theme-img" src={Dark} alt="Темный режимы"/>
+        <button className={"header__theme-button" + " " + (theme === "light" ? "" : "header__theme-button_dark")} onClick={toggleTheme}>
+          <img className="header__theme-img" src={theme === "light" ? DarkIcon : LightIcon } alt="Темный режимы"/>
         </button>
       </div>
     </header>

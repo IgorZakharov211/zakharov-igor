@@ -59,6 +59,10 @@
     background-color: $secondaryColor;
     border-radius: 15px;
     cursor: pointer;
+
+    &_dark{
+      background-color: $dSecondaryColor;;
+    }
   }
 
   &__theme-img{
