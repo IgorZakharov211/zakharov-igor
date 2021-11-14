@@ -24,12 +24,6 @@
     align-items: center;
   }
 
-  &__theme-button{
-    border: none;
-    height: 100%;
-  }
-
-  
   &__navigation{
     margin: 0 0 0 74px;
   }
@@ -56,6 +50,19 @@
       font-weight: 600;
       color: #fff;
     }
+  }
+
+  &__theme-button{
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: $secondaryColor;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  &__theme-img{
+    margin: 1px 0 0 0;
   }
 
 }

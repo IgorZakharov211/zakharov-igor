@@ -2,12 +2,13 @@ import React from 'react';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
 import Logo from '../logo/Logo';
+import Dark from '../../images/icons/dark.png';
 
 function Header(){
   let activeStyle = {
     fontWeight: 600
   };
-
+  
   return(
     <header className="header">
       <div className="header__container">
@@ -27,7 +28,9 @@ function Header(){
             </ul>
           </nav>
         </div>
-        <button className="header__theme-button">Тема</button>
+        <button className="header__theme-button">
+          <img className="header__theme-img" src={Dark} alt="Темный режимы"/>
+        </button>
       </div>
     </header>
   )
