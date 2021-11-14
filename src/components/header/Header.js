@@ -1,14 +1,18 @@
 import React from 'react';
+import { useContext } from 'react';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
 import Logo from '../logo/Logo';
 import Dark from '../../images/icons/dark.png';
+import { ThemeContext } from '../../themeContext';
 
 function Header(){
+  const { theme, toggleTheme } = useContext(ThemeContext)
+
   let activeStyle = {
     fontWeight: 600
   };
-  
+ 
   return(
     <header className="header">
       <div className="header__container">
@@ -28,7 +32,7 @@ function Header(){
             </ul>
           </nav>
         </div>
-        <button className="header__theme-button">
+        <button className="header__theme-button" onClick={toggleTheme}>
           <img className="header__theme-img" src={Dark} alt="Темный режимы"/>
         </button>
       </div>
