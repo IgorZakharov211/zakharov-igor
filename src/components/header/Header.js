@@ -15,25 +15,39 @@ function Header(){
   };
 
   return(
-    <header className="header">
+    <header className={`header ${(theme === "light" ? "" : "header_dark")}`}>
       <div className="header__container">
         <div className="header__left-column">
           <Logo />
           <nav className="header__navigation">
             <ul className="header__pages">
               <li className="header__page">
-                <NavLink exact="true" to="/" className="header__link" style={({ isActive }) => isActive ? activeStyle : undefined}>О себе</NavLink>
+                <NavLink exact="true" to="/" 
+                  className={`header__link ${(theme === "light" ? "" : "header__link_dark")}`} 
+                  style={({ isActive }) => isActive ? activeStyle : undefined}>
+                  О себе
+                </NavLink>
               </li>
               <li className="header__page">
-                <NavLink to="techs" className="header__link" style={({ isActive }) => isActive ? activeStyle : undefined}>Технологии</NavLink>
+                <NavLink to="techs" 
+                  className={`header__link ${(theme === "light" ? "" : "header__link_dark")}`} 
+                  style={({ isActive }) => isActive ? activeStyle : undefined}>
+                  Технологии
+                  </NavLink>
               </li>
               <li className="header__page">
-                <NavLink to="projects" className="header__link" style={({ isActive }) => isActive ? activeStyle : undefined}>Работы</NavLink>
+                <NavLink to="projects" 
+                  className={`header__link ${(theme === "light" ? "" : "header__link_dark")}`}  
+                  style={({ isActive }) => isActive ? activeStyle : undefined}>
+                  Работы
+                </NavLink>
               </li>
             </ul>
           </nav>
         </div>
-        <button className={"header__theme-button" + " " + (theme === "light" ? "" : "header__theme-button_dark")} onClick={toggleTheme}>
+        <button 
+          className={`header__theme-button ${(theme === "light" ? "" : "header__theme-button_dark")}`} 
+          onClick={toggleTheme}>
           <img className="header__theme-img" src={theme === "light" ? DarkIcon : LightIcon } alt="Темный режимы"/>
         </button>
       </div>

@@ -8,7 +8,10 @@
   height: 100px;
   background-color: $primaryMiddleColor;
 
-
+  &_dark{
+    background-color: $dPrimaryMiddleColor;
+  }
+  
   &__container{
     display: flex;
     flex-direction: row;
@@ -46,10 +49,10 @@
     font-weight: 400;
     text-decoration: none;
 
-    &_active{
-      font-weight: 600;
-      color: #fff;
+    &_dark{
+      color: $dFontColor;
     }
+
   }
 
   &__theme-button{
