@@ -17,7 +17,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="app">
+      <div className={`app ${(theme === "light" ? "" : "app_dark")}`}>
         <Header />
         <Routes>
           <Route exact path="/" element={<About />}></Route>
