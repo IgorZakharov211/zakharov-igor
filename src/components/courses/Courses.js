@@ -22,7 +22,7 @@ function Courses(props){
         })
        }
       </ul>
-      <Link exact to="/projects" className={`courses__link ${theme === "light" ? "" : "courses__link_dark"}`} alt="Перейти к проектам">
+      <Link exact="true" to="/projects" className={`courses__link ${theme === "light" ? "" : "courses__link_dark"}`} alt="Перейти к проектам">
         Учебные проекты
         <img src={ArrowIcon} alt="Стрелка перехода" className="courses__icon"/>
       </Link>
@@ -35,7 +35,7 @@ function CoursesItem(name){
   const { theme } = useContext(ThemeContext);
 
   return(
-    <li className={`courses__item ${theme === "light" ? "" : "courses__item_dark"}`}>{name}</li>
+    <li key={name} className={`courses__item ${theme === "light" ? "" : "courses__item_dark"}`}>{name}</li>
   )
 }
 
