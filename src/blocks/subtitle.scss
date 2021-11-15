@@ -1,0 +1,15 @@
+@import '../utils/variables.scss';
+
+.subtitle{
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  color: $fontColor;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  &_dark{
+    color: $dFontColor;
+  }
+}

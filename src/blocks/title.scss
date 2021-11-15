@@ -1,0 +1,18 @@
+@import '../utils/variables.scss';
+
+.title{
+  margin: 0; 
+  padding: 0 0 12px 0;
+  font-family: $mainFont;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: $fontColor;
+  width: 100%;
+  border-bottom: 1px solid $fontColor;
+
+  &_dark{
+    color: $dFontColor;
+    border-bottom: 1px solid $dFontColor;
+  }
+}
