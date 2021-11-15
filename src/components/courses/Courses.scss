@@ -1,0 +1,64 @@
+@import '../../utils/variables.scss';
+@import '../../blocks/title.scss';
+
+.courses{
+  font-family: $engFont;
+
+
+  &__title{
+    margin: 0 0 48px 0;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 60px 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 111px;
+    height: 60px;
+    background-color: $primaryLightColor;
+    color: $fontColor;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    border-radius: 15px;
+
+    &_dark{
+      background-color: $dPrimaryLightColor;
+      color: $dFontColor;
+    }
+  }
+
+  &__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    margin: 0 auto;
+    background-color: $secondaryColor;
+    font-family: $mainFont;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 15px;
+
+    &_dark{
+      background-color: $dSecondaryColor;
+    }
+  }
+
+  &__icon{
+    margin: 0 0 0 6px;
+  }
+}
