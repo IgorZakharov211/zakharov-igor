@@ -70,11 +70,12 @@
     color: $fontColor;
 
     &_active{
-      background-color: $primaryMiddleColor;
+      background-color: $secondaryColor;
+      color: #fff;
 
       &_dark{
-        color: $dFontColor;
-        background-color: $dPrimaryMiddleColor;
+        color: #fff;
+        background-color: $dSecondaryColor;
       }
     }
 
