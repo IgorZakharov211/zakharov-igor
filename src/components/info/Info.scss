@@ -1,0 +1,102 @@
+@import '../../utils/variables.scss';
+
+.info{
+  font-family: $mainFont;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: $fontColor;
+
+  &_dark{
+    color: $dFontColor;
+  }
+
+  &__title{
+    margin: 0 0 48px 0;
+  }
+
+  &__books{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 48px 0;
+  }
+
+  &__subtitle{
+    min-width: 320px;
+    margin: 0 16px 0 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    &_books{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0 0 24px 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__note-container{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  &__button{
+    margin: 0;
+    padding: 8px 16px 8px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: $mainFont;
+    border-radius: 15px;
+    color: $fontColor;
+
+    &_active{
+      background-color: $primaryMiddleColor;
+
+      &_dark{
+        color: $dFontColor;
+        background-color: $dPrimaryMiddleColor;
+      }
+    }
+
+    &_dark{
+      color: $dFontColor;
+    }
+  }
+
+  &__span{
+    font-weight: 500;
+  }
+
+  &__note{
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    background-color: $primaryLightColor;
+    border-radius: 15px;
+    text-align: center;
+
+    &_dark{
+      background-color: $dPrimaryLightColor;
+    }
+  }
+}
+
