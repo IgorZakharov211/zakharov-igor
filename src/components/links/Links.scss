@@ -1,0 +1,57 @@
+@import '../../utils/variables.scss';
+
+.links{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  margin: 0 0 48px 0;
+  align-items: center;
+
+  &__subtitle{
+    min-width: 320px;
+    margin: 0 16px 0 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__list{
+    margin: 0;
+    padding: 16px 0;
+    list-style-type: none;
+    background-color: $primaryLightColor;
+    border-radius: 15px;
+    text-align: center;
+
+    &_dark{
+      background-color: $dPrimaryLightColor;
+    }
+  }
+
+  &__item{
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+
+  &__link{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $secondaryColor;
+    text-decoration: none;
+
+    &::after{
+      content: ", ";
+    }
+
+    &_dark{
+      color: $dSecondaryColor;
+    }
+  }
+}
+
+.links__item:last-child .links__link::after{
+  content: "";
+}
