@@ -5,6 +5,7 @@ import Biography from '../biography/Biography';
 import Courses from '../courses/Courses';
 import Info from '../info/Info';
 import Hobby from '../hobby/Hobby';
+import Contacts from '../contacts/Contacts';
 
 function About(){
   return(
@@ -13,7 +14,8 @@ function About(){
       <Biography className="about" />
       <Courses className="about" />
       <Info className="about" />
-      <Hobby classNaem="hobby" />
+      <Hobby className="about" />
+      <Contacts className="about" />
     </main>
   )
 }
