@@ -32,6 +32,24 @@ function Info(props){
     }
   }
 
+  function chooseClassButton(index){
+    let className = "";
+    if(theme === "dark"){
+      if(noteIndex === index){
+        className = "info__button_active_dark";
+      } else{
+        className = "info__button_dark";
+      }
+    } else {
+      if(noteIndex === index){
+        className = "info__button_active"
+      } else {
+        className = "";
+      }
+    }
+    return className;
+  }
+
   return(
     <section className={`info ${props.className}__info ${theme === "light" ? "" : "info_dark"}`}>
       <h3 className={`title info__title ${theme === "light" ? "" : "title_dark"}`}>Источники вдохновения и информации</h3>
@@ -40,13 +58,7 @@ function Info(props){
         <ul className="info__list">
           <li className="info__item">
             <button 
-              className={
-                `info__button ${
-                  (theme === "light" && noteIndex === 1) ? "info__button_active" : 
-                  (theme === "dark" && noteIndex === 1) ? "info__button_active_dark" : 
-                  (theme === "dark" && noteIndex !== 1) ? "info__button_dark": 
-                  ""
-                }`} 
+              className={`info__button ${chooseClassButton(1)}`} 
               id="1" 
               onClick={buttonClickHandler}>
               <span className="info__span">Грокаем алгоритмы</span><br/>
@@ -55,13 +67,7 @@ function Info(props){
           </li>
           <li className="info__item">
             <button 
-              className={
-                `info__button ${
-                  (theme === "light" && noteIndex === 2) ? "info__button_active" : 
-                  (theme === "dark" && noteIndex === 2) ? "info__button_active_dark" : 
-                  (theme === "dark" && noteIndex !== 2) ? "info__button_dark": 
-                  ""
-                }`} 
+              className={`info__button ${chooseClassButton(2)}`} 
               id="2" 
               onClick={buttonClickHandler}>
               <span className="info__span">Выразительный JavaScript</span><br />
@@ -70,13 +76,7 @@ function Info(props){
           </li>
           <li className="info__item">
             <button 
-              className={
-                `info__button ${
-                  (theme === "light" && noteIndex === 3) ? "info__button_active" : 
-                  (theme === "dark" && noteIndex === 3) ? "info__button_active_dark" : 
-                  (theme === "dark" && noteIndex !== 3) ? "info__button_dark": 
-                  ""
-                }`}  
+              className={`info__button ${chooseClassButton(3)}`} 
               id="3" 
               onClick={buttonClickHandler}>
               <span className="info__span">Совершенный код</span><br />
