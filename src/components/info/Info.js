@@ -2,27 +2,14 @@ import React, { useState } from "react";
 import { useContext } from "react";
 import './Info.scss';
 import { ThemeContext } from '../../themeContext';
+import Links from "../links/Links";
+import { NotesList, OtherList, YouTubeList } from '../../utils/Lists';
 
 function Info(props){
 
   const [noteIndex, setNoteIndex] = useState(1);
   
   const { theme } = useContext(ThemeContext);
-
-  const NotesList = [
-    {
-      index: 1, 
-      subtitle: "Позволила по новому взглянуть на проблемы оптимального выбора алгоритмов и оценкой их сложности под конкретную задачу."
-    },
-    {
-      index: 2, 
-      subtitle: "Возвращаюсь к ней, когда сталкиваюсь с непониманием в тех или иных областях."
-    },
-    {
-      index: 3,
-      subtitle: "Книга очень объемная, невозможно проглотить ее быстро, изучаю постепенно."
-    }
-  ];
 
   function buttonClickHandler(e){
     if(e.target.id){
@@ -90,6 +77,8 @@ function Info(props){
           }
         </div>
       </div>
+      <Links subtitle="Онлайн ресурсы:" list={OtherList} / >
+      <Links subtitle="YouTube каналы и подскасты:" list={YouTubeList} / >
     </section>
   )
 }
