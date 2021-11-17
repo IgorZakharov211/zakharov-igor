@@ -7,13 +7,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: $primaryMiddleColor;
+  background-color: $primaryColor;
   color: $fontColor;
   font-family: $engFont;
 
   &_dark{
     color: $dFontColor;
-    background-color: $dPrimaryMiddleColor;
+    background-color: $dPrimaryColor;
   }
 
   &__container{
