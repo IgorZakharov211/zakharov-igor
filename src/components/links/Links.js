@@ -9,7 +9,7 @@ function Links(props){
 
   return(
     <div className="links">
-      <p2 className="links__subtitle">{props.subtitle}</p2>
+      <p className="links__subtitle">{props.subtitle}</p>
       <ul className={`links__list ${theme === "light" ? "" : "links__list_dark"}`}>
         {
           list.map((item) => {
@@ -25,7 +25,7 @@ function Link(item){
   const { theme } = useContext(ThemeContext);
   
   return(
-    <li className="links__item" key={item.id}>
+    <li className="links__item" key={item.index}>
       <a className={`links__link ${theme === "light" ? "" : "links__link_dark"}`} href={item.link}>{item.name}</a>
     </li>
   )

@@ -8,6 +8,7 @@ import Hobby from '../hobby/Hobby';
 import Contacts from '../contacts/Contacts';
 
 function About(){
+
   return(
     <main className="about">
       <MyInfo className="about" />
