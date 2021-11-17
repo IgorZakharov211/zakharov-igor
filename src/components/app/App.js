@@ -5,6 +5,7 @@ import Header from '../header/Header';
 import About from '../about/About';
 import Projects from '../projects/Projects';
 import Techs from '../techs/Techs';
+import Footer from '../footer/Footer';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeContext } from '../../themeContext';
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/projects" element={<Projects />}></Route>
           <Route exact path="/techs" element={<Techs />}></Route>
         </Routes>
+        <Footer />
       </div>
     </ThemeContext.Provider>
   );
