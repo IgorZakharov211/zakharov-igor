@@ -1,0 +1,52 @@
+@import '../../utils/variables.scss';
+
+.contacts{
+  width: 100%;
+
+  &__title{
+    margin: 0 0 16px 0;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item{
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: $primaryLightColor;
+    border-radius: 15px;
+    font-family: $mainFont;
+    color: $fontColor;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+
+    &_dark{
+      background-color: $dPrimaryLightColor;
+      color: $dFontColor;
+    }
+  }
+
+  &__img{
+    margin: 0 12px 0 0;
+  }
+}
