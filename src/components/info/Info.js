@@ -54,7 +54,7 @@ function Info(props){
     <section className={`info ${props.className}__info ${theme === "light" ? "" : "info_dark"}`}>
       <h3 className={`title info__title ${theme === "light" ? "" : "title_dark"}`}>Источники вдохновения и информации</h3>
       <div className="info__books">
-        <p className="info__subtitle info__subtitle_books">По мимо курсов изучал специализированную литературу:</p>
+        <p className="info__subtitle">По мимо курсов изучал специализированную литературу:</p>
         <ul className="info__list">
           <li className="info__item">
             <button 
