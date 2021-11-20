@@ -2,7 +2,18 @@
 
 .courses{
   font-family: $engFont;
+  width: 100%;
+  background-color: $secondaryColor;
+  padding: 100px 0 100px 0;
 
+  &_dark{
+    background-color: $darkSecondaryColor;
+  }
+
+  &__container{
+    width: 1080px;
+    margin: 0 auto;
+  }
 
   &__title{
     margin: 0 0 48px 0;
@@ -24,16 +35,16 @@
     align-items: center;
     width: 111px;
     height: 60px;
-    background-color: $primaryLightColor;
+    background-color: $spanColor;
     color: $fontColor;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 400;
     border-radius: 15px;
 
     &_dark{
-      background-color: $dPrimaryLightColor;
-      color: $dFontColor;
+      background-color: $darkSpanColor;
+      color: $darkFontColor;
     }
   }
 
@@ -45,15 +56,16 @@
     width: 200px;
     height: 48px;
     margin: 0 auto;
-    background-color: $secondaryColor;
+    background-color: $accentColor;
     font-family: $mainFont;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     border-radius: 15px;
+    font-size: 14px;
 
     &_dark{
-      background-color: $dSecondaryColor;
+      background-color: $darkAccentColor;
     }
   }
 

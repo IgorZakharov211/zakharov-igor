@@ -7,12 +7,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
-  background-color: $primaryMiddleColor;
+  height: 60px;
+  background-color: $headerColor;
   backdrop-filter: blur( 7.5px );
+  border-bottom: 1px solid $borderColor;
 
   &_dark{
-    background-color: $dPrimaryMiddleColor;
+    background-color: $darkHeaderColor;
+    border-bottom: 1px solid $darkBorderColor;
   }
   
   &__container{
@@ -47,32 +49,33 @@
     padding: 0;
     color: $fontColor;
     font-family: $mainFont;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 400;
     text-decoration: none;
 
     &_dark{
-      color: $dFontColor;
+      color: $darkFontColor;
     }
 
   }
 
   &__theme-button{
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     border: none;
-    background-color: $secondaryColor;
-    border-radius: 15px;
+    background-color: $accentColor;
+    border-radius: 10px;
     cursor: pointer;
 
     &_dark{
-      background-color: $dSecondaryColor;;
+      background-color: $darkAccentColor;
     }
   }
 
   &__theme-img{
-    margin: 1px 0 0 0;
+    width: 16px;
+    margin: 2px 0 0 0;
   }
 
 }

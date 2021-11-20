@@ -11,7 +11,7 @@
     min-width: 320px;
     margin: 0 16px 0 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
   }
@@ -20,12 +20,12 @@
     margin: 0;
     padding: 16px 0;
     list-style-type: none;
-    background-color: $primaryLightColor;
+    background-color: $spanColor;
     border-radius: 15px;
     text-align: center;
 
     &_dark{
-      background-color: $dPrimaryLightColor;
+      background-color: $darkSpanColor;
     }
   }
 
@@ -36,10 +36,10 @@
   }
 
   &__link{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    color: $secondaryColor;
+    color: $linksColor;
     text-decoration: none;
 
     &::after{
@@ -47,7 +47,7 @@
     }
 
     &_dark{
-      color: $dSecondaryColor;
+      color: $darkLinksColor;
     }
   }
 }

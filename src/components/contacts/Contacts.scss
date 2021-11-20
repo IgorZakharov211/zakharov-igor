@@ -1,7 +1,7 @@
 @import '../../utils/variables.scss';
 
 .contacts{
-  width: 100%;
+  width: 1080px;
 
   &__title{
     margin: 0 0 16px 0;
@@ -31,18 +31,18 @@
     margin: 0;
     padding: 12px;
     box-sizing: border-box;
-    background-color: $primaryLightColor;
+    background-color: $secondaryColor;
     border-radius: 15px;
     font-family: $mainFont;
     color: $fontColor;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1;
     text-decoration: none;
 
     &_dark{
-      background-color: $dPrimaryLightColor;
-      color: $dFontColor;
+      background-color: $darkSecondaryColor;
+      color: $darkFontColor;
     }
   }
 

@@ -11,12 +11,12 @@ function About(){
 
   return(
     <main className="about">
-      <MyInfo className="about" />
-      <Biography className="about" />
-      <Courses className="about" />
-      <Info className="about" />
-      <Hobby className="about" />
-      <Contacts className="about" />
+        <MyInfo className="about" />
+        <Biography className="about" />
+        <Courses className="about" />
+        <Hobby className="about" />
+        <Info className="about" />
+        <Contacts className="about" />
     </main>
   )
 }
