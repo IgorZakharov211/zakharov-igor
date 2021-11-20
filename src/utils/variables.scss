@@ -5,19 +5,25 @@ $engFont: 'Roboto', sans-serif;
 //Colors ================================================================
 
 // Light mode
-$primaryColor:hsl(69, 30%, 92%);
-$primaryMiddleColor: hsla(69, 47%, 95%, .7);
-$primaryLightColor: hsl(69, 47%, 99%);
+$primaryColor:hsl(0, 0%, 100%);
+$headerColor: hsla(0, 0%, 100%, .9);
+$secondaryColor: hsl(210, 33%, 96%);
+$spanColor: hsl(213, 27%, 94%);
+$borderColor: hsl(210, 33%, 92%);
 $fontColor: hsl(52, 22%, 7%);
-$secondaryColor: hsl(222, 64%, 47%);
+$accentColor: hsl(222, 88%, 50%);
+$linksColor: hsl(222, 64%, 37%);
 
 
 // Dark mode
-$dPrimaryColor: hsl(225, 10%, 5%);
-$dPrimaryMiddleColor: hsla(225, 10%, 10%, .7);
-$dPrimaryLightColor: hsl(225, 10%, 15%);
-$dFontColor: hsl(0, 0%, 98%); 
-$dSecondaryColor: hsl(116, 50%, 50%);
+$darkPrimaryColor: hsl(210, 100%, 12%);
+$darkHeaderColor:hsla(210, 100%, 12%, .9);
+$darkSecondaryColor: hsl(211, 61%, 10%);
+$darkSpanColor: hsl(211, 60%, 19%);
+$darkBorderColor: hsl(211, 60%, 21%);
+$darkFontColor: hsl(0, 0%, 90%); 
+$darkAccentColor: hsl(222, 64%, 47%);
+$darkLinksColor: hsl(116, 50%, 57%);
 
 /* First version
 $primaryColor: hsl(169, 41%, 90%);

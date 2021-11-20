@@ -10,10 +10,12 @@
   background-color: $primaryColor;
   color: $fontColor;
   font-family: $engFont;
+  border-top: 1px solid $borderColor;
 
   &_dark{
-    color: $dFontColor;
-    background-color: $dPrimaryColor;
+    color: $darkFontColor;
+    background-color: $darkPrimaryColor;
+    border-top: 1px solid $darkBorderColor;
   }
 
   &__container{
@@ -28,7 +30,7 @@
   &__copyright{
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 300;
   }
@@ -40,16 +42,16 @@
     margin: 0;
     padding: 16px;
     border-radius: 15px;
-    background-color: $secondaryColor;
+    background-color: $accentColor;
     font-family: $mainFont;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.5;
     text-decoration: none;
 
     &_dark{
-      background-color: $dSecondaryColor;
+      background-color: $darkAccentColor;
     }
   }
 

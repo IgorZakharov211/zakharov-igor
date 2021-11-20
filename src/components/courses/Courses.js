@@ -11,7 +11,8 @@ function Courses(props){
   const coursesList = ["HTML", "CSS", "JavaScript", "React", "GIT", "Express.js", "mongoDB"]
 
   return(
-    <section className={`courses ${props.className}__courses`}>
+    <section className={`courses ${props.className}__courses ${theme === "light" ? "" : "courses_dark"}`}>
+      <div className="courses__container">
       <h3 
         className={`title courses__title ${theme === "light" ? "" : "title_dark"}`}>
         Технологии освоенные на курсах</h3>
@@ -26,6 +27,7 @@ function Courses(props){
         Учебные проекты
         <img src={ArrowIcon} alt="Стрелка перехода" className="courses__icon"/>
       </Link>
+      </div>
     </section>
   )
 }
