@@ -20,9 +20,11 @@
   }
 
   &__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    justify-items: center;
     width: 100%;
     margin: 0 0 60px 0;
     padding: 0;
@@ -30,21 +32,25 @@
   }
 
   &__item{
+    width: 160px;
+    height: 120px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 111px;
-    height: 60px;
     background-color: $spanColor;
     color: $fontColor;
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
     border-radius: 15px;
+    padding: 16px;
+    border: 1px solid $boxColor;
 
     &_dark{
       background-color: $darkSpanColor;
       color: $darkFontColor;
+      border: .5px solid $darkBoxColor;
     }
   }
 
@@ -71,5 +77,10 @@
 
   &__icon{
     margin: 0 0 0 6px;
+  }
+
+  &__img{
+    max-height: 64px;
+    max-width: 128px;
   }
 }
