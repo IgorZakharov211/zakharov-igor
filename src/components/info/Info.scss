@@ -100,9 +100,11 @@
     background-color: $spanColor;
     border-radius: 15px;
     text-align: center;
+    border: 1px solid $boxColor;
 
     &_dark{
       background-color: $darkSpanColor;
+      border: 1px solid $darkBoxColor;
     }
   }
 }
