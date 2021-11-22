@@ -1,0 +1,39 @@
+@import '../../utils/variables.scss';
+
+.projects{
+  font-family: $mainFont;
+  width: 100%;
+
+  &__background{
+    background-color: $secondaryColor;
+
+    &_dark{
+      background-color: $darkSecondaryColor;
+    }
+  }
+
+  &__container{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+  }
+
+  &__message{
+    margin: 80px 0 80px 0;
+  }
+
+  &__title{
+    margin: 0 0 48px 0;
+  }
+
+  &__list{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
