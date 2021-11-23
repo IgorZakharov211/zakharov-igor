@@ -3,6 +3,7 @@ import './Projects.scss';
 import Message from '../message/Message';
 import { ThemeContext } from '../../themeContext';
 import howToLearnImg from '../../images/projects/howToLearn.jpg';
+import russianTravelImg from '../../images/projects/russianTravel.jpg';
 import Card from '../card/Card';
 
 
@@ -12,7 +13,24 @@ function Projects(){
       index: 1,
       name: "Научиться учиться",
       description: "Проект представляет собой типовой одностраничный сайт, на котором рассказывается о современных и эффективных подходах к обучению.",
-      techs: ["CSS", "HTML", "VSCode"],
+      techs: [
+        {
+          index: 1,
+          name: "HTML",
+        },
+        {
+          index: 2,
+          name: "CSS",
+        },
+        {
+          index: 3,
+          name: "VSCode"
+        },
+        {
+          index: 4,
+          name: "БЭМ"
+        }
+      ],
       img: howToLearnImg,
       languages: [
         {
@@ -28,6 +46,44 @@ function Projects(){
       ],
       link: "https://igorzakharov211.github.io/how-to-learn/",
       gitHub: "https://github.com/IgorZakharov211/how-to-learn"
+    },
+    {
+      index: 2,
+      name: "Путешествия по России",
+      description: "Проект представляет собой адаптивный одностраничный сайт, на котором рассказывается о путешествиях по России.",
+      techs: [
+        {
+          index: 1,
+          name: "HTML"
+        },
+        {
+          index: 2,
+          name: "CSS"
+        },
+        {
+          index: 3,
+          name: "VSCode"
+        },
+        {
+          index: 4,
+          name: "БЭМ"
+        }
+      ],
+      img: russianTravelImg,
+      languages: [
+        {
+          index: 1,
+          name: "CSS",
+          percent: 56.4
+        },
+        {
+          index: 2,
+          name: "HTML",
+          percent: 43.6
+        }
+      ],
+      link: "https://igorzakharov211.github.io/russian-travel/",
+      gitHub: "https://github.com/IgorZakharov211/russian-travel"
     }
   ]
   
