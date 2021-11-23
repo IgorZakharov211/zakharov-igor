@@ -5,6 +5,7 @@ import gitHubIcon from '../../images/icons/LightGithub.svg'
 
 function Card(props){
   const { theme } = useContext(ThemeContext);
+  const arrOfTechs = props.techs;
 
   return(
     <li className={`card ${theme === "light" ? "" : "card_dark"}`}>
@@ -18,19 +19,28 @@ function Card(props){
             <img className="card-name__icon" src={gitHubIcon} alt="github" />
           </a>
         </div>
-        <LanguageBar languages={props.languages}/>
+        <Languages languages={props.languages}/>
         <p className="card__subtitle">{props.description}</p>
+        <ul className="card__techs">
+          {
+            arrOfTechs.map((item) => {
+              return(
+                <Tech name={item.name} key={item.index}/>
+              )
+            })
+          }
+        </ul>
       </div>
     </li>
   )
 }
 
-function LanguageBar(props){
+function Languages(props){
   const languagesList = props.languages;
   const { theme } = useContext(ThemeContext);
 
   return(
-    <div className={`languages ${theme === "light" ? "" : "languages_dark"}`}>
+    <div className={`languages card__languages ${theme === "light" ? "" : "languages_dark"}`}>
       <div className="languages__bar">
         {
           languagesList.map((item) => {
@@ -71,6 +81,15 @@ function LanguagesBarFullness(props){
   
   return(
     <div className={`languages__fullness languages__fullness_${fullnessColor}`} style={{width: percent}}></div>
+  )
+}
+
+function Tech(props){
+  const { theme } = useContext(ThemeContext);
+  return(
+    <li className={`card__tech ${theme === "light" ? "" : "card__tech_dark"}`} >
+      {props.name}
+    </li>
   )
 }
 
