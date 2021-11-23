@@ -29,13 +29,6 @@ function Header(){
                 </NavLink>
               </li>
               <li className="header__page">
-                <NavLink to="techs" 
-                  className={`header__link ${(theme === "light" ? "" : "header__link_dark")}`} 
-                  style={({ isActive }) => isActive ? activeStyle : undefined}>
-                  Технологии
-                  </NavLink>
-              </li>
-              <li className="header__page">
                 <NavLink to="projects" 
                   className={`header__link ${(theme === "light" ? "" : "header__link_dark")}`}  
                   style={({ isActive }) => isActive ? activeStyle : undefined}>

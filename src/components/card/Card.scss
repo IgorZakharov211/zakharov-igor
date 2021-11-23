@@ -1,0 +1,86 @@
+@import '../../utils/variables.scss';
+@import './Languages.scss';
+@import './CardName.scss';
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 339px;
+  margin: 0;
+  padding: 0;
+  border-radius: 16px 16px 0 0;
+  list-style-type: none;
+  color: $fontColor;
+  border: 1px solid $boxColor;
+  background-color: $spanColor;
+
+  &_dark{
+    color: $darkFontColor;
+    border: 1px solid $darkBoxColor;
+    background-color: $darkSpanColor;
+  }
+
+  &__container{
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  &__languages{
+    margin: 8px 0 0 0;
+  }
+
+  &__link{
+    display: flex;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+  }
+
+  &__img{
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+  }
+
+  &__subtitle{
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__techs{
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__tech{
+    position: relative;
+    margin: 0;
+    padding: 4px 8px 4px 18px;
+    background-color: $accentColor;
+    font-family: $engFont;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    &_dark{
+      background-color: $darkAccentColor;
+    }
+  }
+}

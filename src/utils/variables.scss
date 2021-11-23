@@ -6,34 +6,34 @@ $engFont: 'Roboto', sans-serif;
 
 // Light mode
 $primaryColor:hsl(0, 0%, 100%);
-$headerColor: hsla(0, 0%, 100%, .9);
-
-
+$headerColor: hsla(0, 0%, 100%, .95);
 $borderColor: hsl(210, 33%, 92%);
 $boxColor: hsl(210, 33%, 87%);
 $secondaryColor: hsl(210, 33%, 96%);
 $spanColor: hsl(213, 27%, 94%);
 $fontColor: hsl(53, 22%, 7%);
-
-
 $accentColor: hsl(222, 88%, 50%);
 $linksColor: hsl(222, 64%, 37%);
 
 
 // Dark mode
 $darkPrimaryColor: hsl(210, 100%, 12%);
-$darkHeaderColor:hsla(210, 100%, 12%, .9);
-
-
+$darkHeaderColor:hsla(210, 100%, 12%, .95);
 $darkSecondaryColor: hsl(211, 61%, 10%);
 $darkSpanColor: hsl(211, 60%, 19%);
 $darkBorderColor: hsl(211, 61%, 16%);
 $darkBoxColor: hsl(211, 61%, 22%);
 $darkFontColor: hsl(0, 0%, 90%); 
-
-
 $darkAccentColor: hsl(222, 64%, 47%);
 $darkLinksColor: hsl(116, 50%, 57%);
+
+
+//Languages color 
+$html: hsl(12, 77%, 52%);
+$css: hsl(264, 34%, 36%);
+$javascript: hsl(53, 84%, 65%);
+$typescript: hsl(193, 52%, 35%);
+$scss: hsl(330, 50%, 55%);
 
 /* First version
 $primaryColor: hsl(169, 41%, 90%);

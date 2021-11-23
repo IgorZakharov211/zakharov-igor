@@ -1,0 +1,117 @@
+@import '../../utils/variables.scss';
+
+.languages{
+  display: flex;
+  flex-direction: column;
+  color: $fontColor;
+
+  &_dark{
+    color: $darkFontColor;
+  }
+
+  &__curcle{
+    width: 10px;
+    height: 10px;
+    margin: 0 4px 0 0;
+    border-radius: 50%;
+
+    &_html{
+      background-color: $html;
+    }
+
+    &_css{
+      background-color: $css;
+    }
+
+    &_javascript{
+      background-color: $javascript;
+    }
+
+    &_typescript{
+      background-color: $typescript;
+    }
+
+    &_scss{
+      background-color: $scss;
+    }
+  }
+
+  &__bar{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 16px 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+  }
+
+  &__fullness{
+    width: 55.5%;
+    height: 10px;
+    border-right: 2px solid $darkFontColor;
+
+    &_html{
+      background-color: $html;
+    }
+
+    &_css{
+      background-color: $css;
+    }
+
+    &_javascript{
+      background-color: $javascript;
+    }
+
+    &_typescript{
+      background-color: $typescript;
+    }
+
+    &_scss{
+      background-color: $scss;
+    }
+
+    &:last-child{
+      border: none;
+    }
+  }
+
+  &__list{
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 8px;
+    margin: 0 0 8px 0;
+    padding: 0;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__name{
+    margin: 0 4px 0 0;
+    padding: 0;
+    font-family: $engFont;
+    font-weight: 400;
+
+    &::after{
+      content: ":";
+    }
+  }
+
+  &__percent{
+    margin: 0;
+    padding: 0;
+    font-family: $engFont;
+    font-weight: 300;
+
+    &::after{
+      content: "%";
+    }
+  }
+}
