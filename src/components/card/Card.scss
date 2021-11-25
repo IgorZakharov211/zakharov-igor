@@ -49,10 +49,11 @@
 
   &__techs{
     display: grid;
-    grid-template-columns: min-content min-content;
-    grid-auto-flow: column;
+    grid-template-columns: min-content min-content min-content;
+    grid-auto-flow: row;
     grid-auto-columns: min-content;
     gap: 8px;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
