@@ -20,3 +20,8 @@
 * Удаление веток 
   > * **git branch -D feature/theme**
 
+* Редактируем настройки в **nginx**
+  > * **sudo nano /etc/nginx/sites-available/default** 
+  > * **Ctrl + X** **Y** **Enter**
+  > * **sudo nginx -t**
+  > * **sudo systemctl restart nginx**
