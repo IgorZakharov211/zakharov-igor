@@ -4,6 +4,7 @@ import Message from '../message/Message';
 import { ThemeContext } from '../../themeContext';
 import howToLearnImg from '../../images/projects/howToLearn.jpg';
 import russianTravelImg from '../../images/projects/russianTravel.jpg';
+import mesto from '../../images/projects/mesto.jpg';
 import Card from '../card/Card';
 
 
@@ -16,18 +17,10 @@ function Projects(){
       techs: [
         {
           index: 1,
-          name: "HTML",
-        },
-        {
-          index: 2,
-          name: "CSS",
-        },
-        {
-          index: 3,
           name: "VSCode"
         },
         {
-          index: 4,
+          index: 2,
           name: "БЭМ"
         }
       ],
@@ -54,18 +47,10 @@ function Projects(){
       techs: [
         {
           index: 1,
-          name: "HTML"
-        },
-        {
-          index: 2,
-          name: "CSS"
-        },
-        {
-          index: 3,
           name: "VSCode"
         },
         {
-          index: 4,
+          index: 2,
           name: "БЭМ"
         }
       ],
@@ -84,10 +69,64 @@ function Projects(){
       ],
       link: "https://igorzakharov211.github.io/russian-travel/",
       gitHub: "https://github.com/IgorZakharov211/russian-travel"
+    },
+    {
+      index: 3,
+      name: "Проект Mesto",
+      description: "Проект представляет собой приложение Mesto на реакте с собственным API. Одностраничный сайт, на котором находятся фотографии различных мест с подписями и счетчиками лайков. ",
+      techs: [
+        {
+          index: 1,
+          name: "Node.js"
+        },
+        {
+          index: 2,
+          name: "Express.js"
+        },
+        {
+          index: 3,
+          name: "mongoDB"
+        },
+        {
+          index: 4,
+          name: "ESLint"
+        },
+        {
+          index: 5,
+          name: "React"
+        },
+        {
+          index: 6, 
+          name: "VSCode"
+        },
+        {
+          index: 7,
+          name: "БЭМ"
+        }
+      ],
+      img: mesto,
+      languages: [
+        {
+          index: 1,
+          name: "JavaScript",
+          percent: 65.5
+        },
+        {
+          index: 2,
+          name: "CSS",
+          percent: 32.1
+        },
+        {
+          index: 3,
+          name: "HTML",
+          percent: 2.4
+        }
+      ],
+      link: "https://mesto.zakharovigor.ru",
+      gitHub: "https://github.com/IgorZakharov211/react-mesto-api-full"
     }
   ]
   
-
   const { theme } = useContext(ThemeContext);
   return(
     <main className="projects">
