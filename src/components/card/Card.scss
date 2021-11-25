@@ -31,13 +31,18 @@
 
   &__link{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 220px;
     overflow: hidden;
+    min-height: 228px;
+    max-height: 228px;
   }
 
   &__img{
-    width: 100%;
+    width: 340px;
+    min-height: 228px;
+    max-height: 228px;
     border-radius: 14px 14px 0 0;
   }
 
@@ -49,17 +54,16 @@
 
   &__techs{
     display: grid;
-    grid-template-columns: min-content min-content min-content;
-    grid-auto-flow: row;
-    grid-auto-columns: min-content;
+    grid-template-columns: repeat(auto-fill, 90px);
     gap: 8px;
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
 
   &__tech{
+    width: min-content;
     position: relative;
     margin: 0;
     padding: 4px 8px 4px 18px;
