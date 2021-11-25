@@ -3,7 +3,7 @@ import { useContext } from "react";
 import './Info.scss';
 import { ThemeContext } from '../../themeContext';
 import Links from "../links/Links";
-import { NotesList, OtherList, YouTubeList } from '../../utils/Lists';
+import { notesList, otherList, youTubeList } from '../../utils/Lists';
 
 function Info(props){
 
@@ -74,12 +74,12 @@ function Info(props){
           </ul>
           <div className="info__note-container">
             {
-              (NotesList.filter((i) => i.index === noteIndex)) ? NoteItem(NotesList.filter((i) => i.index === noteIndex)[0].subtitle) : NoteItem("Позволила по новому взглянуть на проблемы оптимального выбора алгоритмов и оценкой их сложности под конкретную задачу.")
+              (notesList.filter((i) => i.index === noteIndex)) ? NoteItem(notesList.filter((i) => i.index === noteIndex)[0].subtitle) : NoteItem("Позволила по новому взглянуть на проблемы оптимального выбора алгоритмов и оценкой их сложности под конкретную задачу.")
             }
           </div>
         </div>
-        <Links subtitle="Онлайн ресурсы:" list={OtherList} / >
-        <Links subtitle="YouTube каналы и подскасты:" list={YouTubeList} / >
+        <Links subtitle="Онлайн ресурсы:" list={otherList} / >
+        <Links subtitle="YouTube каналы и подскасты:" list={youTubeList} / >
       </div>
     </section>
   )
