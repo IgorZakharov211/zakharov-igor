@@ -12,12 +12,22 @@
   list-style-type: none;
   color: $fontColor;
   border: 1px solid $boxColor;
-  background-color: $spanColor;
+  background-color: $secondaryColor;
+
+  &_background{
+    background-color: $spanColor;
+
+    &_dark{
+      color: $darkFontColor;
+      border: 1px solid $darkBoxColor;
+      background-color: $darkSpanColor;
+    }
+  }
 
   &_dark{
     color: $darkFontColor;
     border: 1px solid $darkBoxColor;
-    background-color: $darkSpanColor;
+    background-color: $darkSecondaryColor;
   }
 
   &__container{
@@ -43,7 +53,7 @@
     width: 340px;
     min-height: 228px;
     max-height: 228px;
-    border-radius: 14px 14px 0 0;
+    border-radius: 16px 16px 0 0;
   }
 
   &__subtitle{

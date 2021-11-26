@@ -7,8 +7,26 @@ function Card(props){
   const { theme } = useContext(ThemeContext);
   const arrOfTechs = props.techs;
 
+  function chooseCardColor(index){
+    let className = "";
+    if(theme === "dark"){
+      if(props.background){
+        className = "card_background_dark";
+      } else{
+        className = "card_dark";
+      }
+    } else {
+      if(props.background){
+        className = "card_background"
+      } else {
+        className = "";
+      }
+    }
+    return className;
+  }
+
   return(
-    <li className={`card ${theme === "light" ? "" : "card_dark"}`}>
+    <li className={`card ${chooseCardColor()}`}>
       <a className="card__link" href={props.link}>
         <img className="card__img" src={props.img} alt={props.name} />
       </a>
