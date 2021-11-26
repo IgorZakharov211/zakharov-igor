@@ -67,6 +67,7 @@
     justify-content: center;
     align-items: center;
     width: 32px;
+    min-width: 32px;
     height: 32px;
     border: none;
     background-color: $accentColor;
@@ -82,4 +83,39 @@
     width: 16px;
   }
 
+}
+
+@media screen and (max-width: 1144px) {
+  .header{
+
+    &__container{
+      width: calc(100% - 64px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header{
+
+    &__container{
+      width: calc(100% - 32px);
+    }
+
+    &__navigation{
+      margin: 0 0 0 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 468px){
+  .header{
+
+    &__link{
+      margin: 0 24px 0 0;
+    }
+
+    &__navigation{
+      margin: 0 0 0 24px;
+    }
+  }
 }
