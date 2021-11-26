@@ -1,6 +1,9 @@
 import howToLearnImg from '../images/projects/howToLearn.jpg';
 import russianTravelImg from '../images/projects/russianTravel.jpg';
-import mesto from '../images/projects/mesto.jpg';
+import mestoImg from '../images/projects/mesto.jpg';
+import moviesImg from '../images/projects/movies.jpg';
+import hellyFlyImg from '../images/projects/hellyFly.jpg';
+import creationImg from '../images/projects/creation.jpg';
 
 const notesList = [
   {
@@ -164,7 +167,7 @@ const projectsList = [
         name: "Adaptive"
       }
     ],
-    img: mesto,
+    img: mestoImg,
     languages: [
       {
         index: 1,
@@ -184,7 +187,160 @@ const projectsList = [
     ],
     link: "https://mesto.zakharovigor.ru",
     gitHub: "https://github.com/IgorZakharov211/react-mesto-api-full"
+  },
+  {
+    index: 4,
+    name: "(Api) Проекта Movies explorer",
+    description: "Серверная часть проекта Movies-explorer, с регистрацией и сохраненными фильмами пользователей.",
+    techs: [
+      {
+        index: 1,
+        name: "Node.js"
+      },
+      {
+        index: 2,
+        name: "Express.js"
+      },
+      {
+        index: 3,
+        name: "mongoDB"
+      },
+      {
+        index: 4,
+        name: "ESLint"
+      }
+    ],
+    img: moviesImg,
+    languages: [
+      {
+        index: 1,
+        name: "JavaScript",
+        percent: 100
+      }
+    ],
+    link: "https://movies.zakharovigor.ru",
+    gitHub: "https://github.com/IgorZakharov211/movies-explorer-api"
+  },
+  {
+    index: 5,
+    name: "Проект Movies explorer",
+    description: "Проект представляет собой сайт на котором представлена основная информация об обучении, а также сервис movies-explorer на котором можно найти нужны фильм и сохранить его к себе. На сайте присутствует регистрация, с возможностью редактирования информации о себе.",
+    techs: [
+      {
+        index: 1,
+        name: "React"
+      },
+      {
+        index: 2,
+        name: "БЭМ"
+      },
+      {
+        index: 3,
+        name: "Adaptive"
+      }
+    ],
+    img: moviesImg,
+    languages: [
+      {
+        index: 1,
+        name: "JavaScript",
+        percent: 61.3
+      },
+      {
+        index: 2,
+        name: "CSS",
+        percent: 37.0
+      },
+      {
+        index: 3,
+        name: "HTML",
+        percent: 1.7
+      }
+    ],
+    link: "https://movies.zakharovigor.ru",
+    gitHub: "https://github.com/IgorZakharov211/movies-explorer-frontend"
   }
-]
+];
 
-export { notesList, otherList, youTubeList, projectsList };
+const petProjectsList = [
+  {
+    index: 1,
+    name: "Проект HellyFly",
+    description: "Одностраничный сайт о фотосессии на вертолете, с примерами фотографий, контактной информацией и отзывами.",
+    techs: [
+      {
+        index: 1,
+        name: "React"
+      },
+      {
+        index: 2,
+        name: "БЭМ"
+      },
+      {
+        index: 3,
+        name: "Adaptive"
+      }
+    ],
+    img: hellyFlyImg,
+    languages: [
+      {
+        index: 1,
+        name: "CSS",
+        percent: 50.3
+      },
+      {
+        index: 2,
+        name: "JavaScript",
+        percent: 45.7
+      },
+      {
+        index: 3,
+        name: "HTML",
+        percent: 4.0
+      }
+    ],
+    link: "https://helyfly.zakharovigor.ru",
+    gitHub: "https://github.com/IgorZakharov211/helyfly-react"
+  },
+  {
+    index: 2,
+    name: "Свадебное агенство 'Создание'",
+    description: "Сайт - лендинг для свадебного агентства 'Создание', содержащая информацию об основных этапах подготовки.",
+    techs: [
+      {
+        index: 1,
+        name: "React"
+      },
+      {
+        index: 2,
+        name: "БЭМ"
+      },
+      {
+        index: 3,
+        name: "Adaptive"
+      }
+    ],
+    img: creationImg,
+    languages: [
+      {
+        index: 1, 
+        name: "SCSS",
+        percent: 54.0
+      },
+      {
+        index: 2, 
+        name: "JavaScript",
+        percent: 41.6
+      },
+      {
+        index: 3,
+        name: "HTML",
+        percent: 4.4
+      }
+    ],
+    link: "https://igorzakharov211.github.io/creation-landing",
+    gitHub: "https://github.com/IgorZakharov211/creation-landing"
+  }
+];
+
+export { notesList, otherList, youTubeList, projectsList, petProjectsList };

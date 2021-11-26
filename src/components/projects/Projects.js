@@ -3,7 +3,7 @@ import './Projects.scss';
 import Message from '../message/Message';
 import { ThemeContext } from '../../themeContext';
 import Card from '../card/Card';
-import { projectsList } from '../../utils/Lists';
+import { projectsList, petProjectsList } from '../../utils/Lists';
 
 function Projects(){
   
@@ -27,12 +27,35 @@ function Projects(){
                 languages = { item.languages }
                 link = { item.link }
                 gitHub = { item.gitHub }
+                background = { true }
                 />
                 )
               })
             }
           </ul>
         </div>
+      </div>
+      <div className="projects__container">
+        <h2 className={`title projects__title ${theme === "light" ? "" : "title_dark"}`}>Pet проекты</h2>
+          <ul className="projects__list">
+            {
+              petProjectsList.map((item) => {
+                return (
+                <Card 
+                key= { item.index }
+                name = { item.name } 
+                description = { item.description }
+                techs = { item.techs}
+                img = { item.img }
+                languages = { item.languages }
+                link = { item.link }
+                gitHub = { item.gitHub }
+                background = { false }
+                />
+                )
+              })
+            }
+          </ul>
       </div>
     </main>
   )
