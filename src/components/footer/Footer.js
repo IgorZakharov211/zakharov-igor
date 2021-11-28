@@ -12,7 +12,6 @@ function Footer(){
         <p className="footer__copyright">@ 2021 Zakharov Igor. All Rights Reserved.</p>
         <a className={`footer__link ${theme === "light" ? "" : "footer__link_dark"}`} href="https://github.com/IgorZakharov211/zakharov-igor">
           <img className="footer__img" src={GithubIcon} alt="GitHub" />
-          Страница
         </a>
       </div>
     </footer>

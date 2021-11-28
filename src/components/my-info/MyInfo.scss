@@ -61,3 +61,84 @@
     }
   }
 }
+
+@media screen and (max-width: 1144px){
+  .my-info{
+    width: calc(100% - 64px);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .my-info{
+    width: calc(100% - 32px);
+
+    &__message{
+      margin: 0 0 60px 0;
+    }
+
+    &__name{
+      font-size: 26px;
+    }
+
+    &__subtitle{
+      font-size: 14px;
+    }
+
+    &__avatar{
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .my-info{
+
+    &__subtitle{
+      margin: 0 ;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .my-info{
+
+    &__user{
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+    }
+
+    &__name{
+      margin: 0 16px 0 0;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__subtitle{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__avatar{
+      height: 48px;
+      width: 48px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 340px){
+  .my-info{
+
+    &__user{
+      grid-template-columns: min-content 1fr;
+    }
+  }
+}

@@ -7,3 +7,15 @@
     margin: 0 0 16px 0;
   }
 }
+
+@media screen and (max-width: 1144px){
+  .biography{
+    width: calc(100% - 64px);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .biography{
+    width: calc(100% - 32px);
+  }
+}

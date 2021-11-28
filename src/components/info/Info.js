@@ -42,7 +42,7 @@ function Info(props){
       <div className="info__container">
         <h3 className={`title info__title ${theme === "light" ? "" : "title_dark"}`}>Источники вдохновения и информации</h3>
         <div className="info__books">
-          <p className="info__subtitle">По мимо курсов изучал специализированную литературу:</p>
+          <p className="info__subtitle">По мимо курсов изучал специализированную литературу</p>
           <ul className="info__list">
             <li className="info__item">
               <button 
@@ -78,8 +78,8 @@ function Info(props){
             }
           </div>
         </div>
-        <Links subtitle="Онлайн ресурсы:" list={otherList} / >
-        <Links subtitle="YouTube каналы и подскасты:" list={youTubeList} / >
+        <Links subtitle="Онлайн ресурсы" list={otherList} / >
+        <Links subtitle="YouTube каналы и подскасты" list={youTubeList} / >
       </div>
     </section>
   )

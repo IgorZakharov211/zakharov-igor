@@ -30,7 +30,7 @@
     align-items: center;
     width: 100%;
     margin: 0 0 48px 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   &__subtitle{
@@ -41,9 +41,13 @@
     min-width: 320px;
     margin: 0 16px 0 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
+
+    &::after{
+      content: ":";
+    }
   }
 
   &__list{
@@ -68,25 +72,29 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     font-family: $mainFont;
     border-radius: 15px;
     color: $fontColor;
+    border: 1px solid $boxColor;
 
     &_active{
       background-color: $accentColor;
       color: #fff;
+      border: none;
 
       &_dark{
         color: #fff;
         background-color: $darkAccentColor;
+        border: none;
       }
     }
 
     &_dark{
       color: $darkFontColor;
+      border: 1px solid $darkBoxColor;
     }
   }
 
@@ -109,3 +117,100 @@
   }
 }
 
+@media screen and (max-width: 1144px){
+  .info{
+    padding: 80px 0 80px 0;
+
+    &__container{
+      width: calc(100% - 64px);
+    }
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .info{
+
+    &__books{
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 32px 0;
+    }
+
+    &__subtitle{
+      margin: 0 0 16px 0;
+      font-weight: 500;
+
+      &::after{
+        content: "";
+      }
+    }
+
+    &__note{
+      padding: 20px 20px 20px 20px;
+      border: 1px solid $boxColor;
+  
+      &_dark{
+        background-color: $darkSpanColor;
+        border: 1px solid $darkBoxColor;
+      }
+    }
+
+    &__list{
+      width: 100%;
+    }
+
+    &__note-container{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .info{
+    padding: 60px 0 60px 0;
+
+    &__container{
+      width: calc(100% - 32px);
+    }
+
+    &__books{
+      font-size: 14px;
+    }
+
+    &__button{
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    &__subtitle{
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px){
+  .info{
+
+    &__list{
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 8px 0;
+    }
+
+    &__item{
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin: 0 0 8px 0;
+    }
+
+    &__button{
+      width: 100%;
+      text-align: start;
+    }
+
+    &__subtitle{
+      min-width: 100px;
+    }
+  }
+}

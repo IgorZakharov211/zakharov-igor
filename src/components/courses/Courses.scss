@@ -23,8 +23,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 16px;
-    row-gap: 16px;
+    gap: 16px;
     justify-items: stretch;
     width: 100%;
     margin: 0 0 60px 0;
@@ -39,10 +38,6 @@
     justify-content: center;
     align-items: center;
     background-color: $spanColor;
-    color: $fontColor;
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 400;
     border-radius: 15px;
     padding: 16px;
     border: 1px solid $boxColor;
@@ -84,3 +79,80 @@
     max-width: 128px;
   }
 }
+
+@media screen and (max-width: 1144px){
+  .courses{
+    padding: 80px 0 80px 0;
+
+    &__container{
+      width: calc(100% - 64px);
+    }
+
+    &__list{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 960px){
+  .courses{
+
+    &__list{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  .courses{
+
+    &__list{
+      gap:8px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item{
+      height: 100px;
+      padding: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .courses{
+    padding: 60px 0 60px 0;
+
+    &__container{
+      width: calc(100% - 32px);
+    }
+
+    &__img{
+      max-height: 48px;
+      max-width: 96px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px){
+  .courses{
+
+    &__list{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item{
+      height: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 440px){
+  .courses{
+
+    &__img{
+      max-height: 40px;
+      max-width: 80px;
+    }
+  }
+}
+

@@ -13,13 +13,32 @@
     background-color: $secondaryColor;
     border-radius: 15px;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.25;
     font-weight: 400;
     color: $fontColor;
+    text-align: center;
 
     &_dark{
       color: $darkFontColor;
       background-color: $darkSecondaryColor;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .message{
+    &__subtitle{
+      padding: 24px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .message{
+
+    &__subtitle{
+      padding: 16px;
     }
   }
 }

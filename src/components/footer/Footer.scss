@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.25;
     font-weight: 300;
   }
 
@@ -49,6 +49,11 @@
     font-weight: 600;
     line-height: 1.5;
     text-decoration: none;
+    
+
+    &::after{
+      content: "Страница";
+    }
 
     &_dark{
       background-color: $darkAccentColor;
@@ -57,5 +62,36 @@
 
   &__img{
     margin: 0 12px 0 0;
+  }
+}
+
+@media screen and (max-width: 1144px){
+  .footer{
+
+    &__container{
+      width: calc(100% - 64px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .footer{
+
+    &__container{
+      width: calc(100% - 32px);
+    }
+
+    &__link{
+      padding: 8px;
+      border-radius: 50%;
+      
+      &::after{
+        content: "";
+      }
+    }
+
+    &__img{
+      margin: 0;
+    }
   }
 }

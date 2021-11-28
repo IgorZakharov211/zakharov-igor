@@ -11,9 +11,13 @@
     min-width: 320px;
     margin: 0 16px 0 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+
+    &::after{
+      content: ":";
+    }
   }
 
   &__list{
@@ -24,6 +28,7 @@
     border-radius: 15px;
     text-align: center;
     border: 1px solid $boxColor;
+    box-sizing: border-box;
 
     &_dark{
       background-color: $darkSpanColor;
@@ -38,7 +43,7 @@
   }
 
   &__link{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
     color: $linksColor;
@@ -56,4 +61,41 @@
 
 .links__item:last-child .links__link::after{
   content: "";
+}
+
+@media screen and (max-width: 1080px){
+  .links{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 32px 0;
+
+    &__subtitle{
+      text-align: center;
+      font-weight: 500;
+      margin: 0 0 12px 0;
+      
+      &::after{
+        content: "";
+      }
+    }
+
+    &__list{
+      padding: 16px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .links{
+
+    &__subtitle{
+      min-width: 100px;
+      font-size: 14px;
+    }
+
+    &__link{
+      font-size: 14px;
+    }
+  }
 }
