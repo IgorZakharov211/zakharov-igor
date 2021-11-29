@@ -6,7 +6,14 @@ $engFont: 'Roboto', sans-serif;
 
 // Light mode
 $primaryColor:hsl(0, 0%, 100%);
-$headerColor: hsla(0, 0%, 100%, .92);
+$headerColor: linear-gradient(
+  hsla(0, 0%, 100%, 1) 50%,
+  hsla(0, 0%, 100%, .98),
+  hsla(0, 0%, 100%, .96),
+  hsla(0, 0%, 100%, .94),
+  hsla(0, 0%, 100%, .92),
+  hsla(0, 0%, 100%, .9),
+  );
 $borderColor: hsl(210, 33%, 92%);
 $boxColor: hsl(210, 33%, 87%);
 $secondaryColor: hsl(210, 33%, 96%);
@@ -18,7 +25,14 @@ $linksColor: hsl(222, 64%, 37%);
 
 // Dark mode
 $darkPrimaryColor: hsl(210, 100%, 12%);
-$darkHeaderColor:hsla(210, 100%, 12%, .85);
+$darkHeaderColor: linear-gradient(
+  hsla(210, 100%, 12%, 1) 50%,
+  hsla(210, 100%, 12%, .99),
+  hsla(210, 100%, 12%, .98),
+  hsla(210, 100%, 12%, .97),
+  hsla(210, 100%, 12%, .96),
+  hsla(210, 100%, 12%, .95),
+  );
 $darkSecondaryColor: hsl(211, 61%, 10%);
 $darkSpanColor: hsl(211, 60%, 19%);
 $darkBorderColor: hsl(211, 61%, 16%);
