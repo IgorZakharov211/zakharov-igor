@@ -8,13 +8,13 @@
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: $headerColor;
-  backdrop-filter: blur( 5px );
+  background: $headerColor;
+  backdrop-filter: blur( 7.5px );
   border-bottom: 1px solid $borderColor;
   z-index: 2;
 
   &_dark{
-    background-color: $darkHeaderColor;
+    background: $darkHeaderColor;
     border-bottom: 1px solid $darkBorderColor;
   }
   

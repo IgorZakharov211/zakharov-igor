@@ -3,12 +3,13 @@
 .card-name{
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: 40px;
+  justify-content: space-between;
 
   &__title{
     margin: 10px 0 0 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
   }
