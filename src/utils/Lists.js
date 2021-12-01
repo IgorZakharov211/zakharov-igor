@@ -338,7 +338,7 @@ const petProjectsList = [
         percent: 4.4
       }
     ],
-    link: "https://igorzakharov211.github.io/creation-landing",
+    link: "https://creationlanding.zakharovigor.ru/",
     gitHub: "https://github.com/IgorZakharov211/creation-landing"
   }
 ];
